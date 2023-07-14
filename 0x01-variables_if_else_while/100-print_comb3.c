@@ -19,20 +19,17 @@ int main(void)
 	{
 		for (num2 = num1 + 1; num2 < 58; num2++)
 		{
-			if (num1 != num2)
-			{
-				putchar(num1);
-				putchar(num2);
+			putchar(num1);
+			putchar(num2);
 
-				if (num1 == 56 && num2 == 57)
-				{
-					putchar('\n');
-				}
-				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
+			if (num1 == 56 && num2 == 57)
+			{
+				putchar('\n');
+			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
