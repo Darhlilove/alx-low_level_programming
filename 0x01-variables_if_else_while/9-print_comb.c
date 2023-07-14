@@ -20,7 +20,6 @@ int main(void)
 		{
 			putchar(num);
 			putchar(',');
-			putchar(' ');
 			num++;
 		}
 		else
@@ -29,6 +28,6 @@ int main(void)
 			num++;
 		}
 	}
-
+	putchar('\n');
 	return (0);
 }
