@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * num - placeholder for numbers
+ * num - placeholder for decimal designates for the single digit characters
  *
  * Return: Always 0 on success
  */
@@ -12,15 +12,15 @@ int main(void)
 {
 	int num;
 
-	num = 0;
+	num = 48;
 
-	while (num < 10)
+	while (num < 58)
 	{
-		printf("%d", num); /* Print numbers */
+		putchar(num);
 		num++;
 	}
 
-	putchar('\n')
+	putchar('\n');
 
 	return (0);
 }

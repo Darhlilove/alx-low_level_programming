@@ -3,31 +3,20 @@
 /**
  * main - Entry point
  *
- * ch - holds characters to be printed
+ * ch - placeholder for characters
  *
  * Return: Always 0 on success
  */
 
 int main(void)
 {
-	char ch;
-
-	ch = 'a';
+	char ch = 'a';
 
 	while (ch <= 'z')
 	{
-		if (ch == 'q' || ch == 'e')
-		{
-			ch++;
-		}
-		else
-		{
-			putchar(ch);
-			ch++;
-		}
+		putchar(ch);  /* Prints the characters */
+		ch++;
 	}
-
 	putchar('\n');
-
 	return (0);
 }
