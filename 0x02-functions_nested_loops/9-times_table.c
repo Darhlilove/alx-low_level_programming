@@ -8,9 +8,7 @@
 
 void times_table(void)
 {
-	int num1;
-	int num2;
-	int result;
+	int num1, num2, result;
 
 	for (num1 = 0; num1 < 10; num1++)
 	{
@@ -23,21 +21,26 @@ void times_table(void)
 				_putchar(result % 10 + '0');
 				if (num2 != 9)
 				{
-					_putchar(' ');
 					_putchar(',');
+					_putchar(' ');
 				}
-				_putchar('\n');
+			}
+			else if (result == 0)
+			{
+				_putchar(result + '0');
+				_putchar(' ');
 			}
 			else
 			{
+				_putchar(' ');
 				_putchar(result + '0');
 				if (num2 != 9)
 				{
-					_putchar(' ');
 					_putchar(',');
+					_putchar(' ');
 				}
-				_putchar('\n');
 			}
 		}
+		_putchar('\n');
 	}
 }
