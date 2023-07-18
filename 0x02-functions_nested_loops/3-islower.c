@@ -3,7 +3,7 @@
 /**
  * _islower - Entry point
  *
- * c - placeholder for the character to be checked
+ * @c: placeholder for the character to be checked
  *
  * Return: 1 for lowercase or 0 otherwise
  */
