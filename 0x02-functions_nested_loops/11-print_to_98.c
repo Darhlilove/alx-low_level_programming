@@ -29,7 +29,7 @@ void print_to_98(int n)
 		}
 		else
 		{
-			num = -n
+			num = -n;
 			_putchar('-');
 			_putchar(num / 10 + '0');
 			_putchar(num % 10 + '0');
