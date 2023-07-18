@@ -1,8 +1,10 @@
 #ifndef HEADER_H
 #define HEADER_H
 
+/* print character to stdout */
 int _putchar(char c);
 
+/* print letters of the alphabet */
 void print_alphabet(void);
 
 void print_alphabet_x10(void);
