@@ -25,11 +25,16 @@ void times_table(void)
 					_putchar(' ');
 				}
 			}
-			else if (num1 == 0 || num2 == 0)
+			else if (num1 == 0)
 			{
 				_putchar(result + '0');
-				_putchar(',');
-				_putchar(' ');
+
+				if (num2 != 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 			}
 			else
 			{
