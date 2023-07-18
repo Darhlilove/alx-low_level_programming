@@ -12,24 +12,24 @@ void print_to_98(int n)
 {
 	int num;
 
-	for  (; n <= 98; n++)
+	for  ( num = n; num <= 98; num++)
 	{
-		if (n >= 0 && n < 10)
+		if (num >= 0 && num < 10)
 		{
-			_putchar(n + '0');
+			_putchar(num + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
-		else if (n >= 10)
+		else if (num >= 10)
 		{
-			_putchar(n / 10 + '0');
-			_putchar(n % 10 + '0');
+			_putchar(num / 10 + '0');
+			_putchar(num % 10 + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
 		else
 		{
-			num = -n;
+			num = -num;
 			_putchar('-');
 			_putchar(num / 10 + '0');
 			_putchar(num % 10 + '0');
