@@ -5,20 +5,18 @@
  *
  * @n: placeholder of start point
  *
- * Return: void always
+ * Return: void
  */
-
 void print_to_98(int n)
 {
 	int num;
 
-	for  ( num = n; num <= 98; num++)
+	while ((n != 98 && n <= 98) || (n != 98 && n >= 98))
 	{
-		if (num >= 0 && num < 10)
-		{
+		num = n;
+		if (n >= 0 && n < 10)
 			_putchar(num + '0');
-		}
-		else if (num >= 10)
+		else if (n >= 10)
 		{
 			_putchar(num / 10 + '0');
 			_putchar(num % 10 + '0');
@@ -30,11 +28,16 @@ void print_to_98(int n)
 			_putchar(num / 10 + '0');
 			_putchar(num % 10 + '0');
 		}
-		if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+		_putchar(',');
+		_putchar(' ');
+
+		if (n <= 98)
+			n++;
+		else
+			n--;
 	}
+
+	_putchar('9');
+	_putchar('8');
 	_putchar('\n');
 }
