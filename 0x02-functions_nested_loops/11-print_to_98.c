@@ -17,15 +17,11 @@ void print_to_98(int n)
 		if (num >= 0 && num < 10)
 		{
 			_putchar(num + '0');
-			_putchar(',');
-			_putchar(' ');
 		}
 		else if (num >= 10)
 		{
 			_putchar(num / 10 + '0');
 			_putchar(num % 10 + '0');
-			_putchar(',');
-			_putchar(' ');
 		}
 		else
 		{
@@ -33,9 +29,12 @@ void print_to_98(int n)
 			_putchar('-');
 			_putchar(num / 10 + '0');
 			_putchar(num % 10 + '0');
-			_putchar(',');
-			_putchar(' ');
 		}
+		if (n != 98
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 	}
 	_putchar('\n');
 }
