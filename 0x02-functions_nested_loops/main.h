@@ -31,7 +31,7 @@ void jack_bauer(void);
 /* prints the 9 times table, starting with 0 */
 void times_table(void);
 
-/* adds two integers and returns the result */.
+/* adds two integers and returns the result */
 int add(int, int);
 
 /* prints all natural numbers from n to 98, followed by a new line */
