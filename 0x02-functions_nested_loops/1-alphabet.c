@@ -3,6 +3,8 @@
 /**
  * main - Entry point
  *
+ * print_alphabet: prints letters of the alphabet
+ *
  * Return: void always on success
  */
 
