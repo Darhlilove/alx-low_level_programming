@@ -28,8 +28,8 @@ void times_table(void)
 			else if (num1 == 0 || num2 == 0)
 			{
 				_putchar(result + '0');
-				_putchar(',')
-					_putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 			}
 			else
 			{
