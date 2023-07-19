@@ -26,6 +26,14 @@ int main(void)
 	return (0);
 }
 
+/**
+ * sum_multiple_of_three_or_five - multple sum function
+ *
+ * @n: placeolder of number
+ *
+ * Return: result always
+ */
+
 int sum_multiple_of_three_or_five(int n)
 {
 	int num, result;
