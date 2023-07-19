@@ -7,7 +7,7 @@
  * Return: 0 always
  */
 
-int sum_multiple_of_three_or_five(void);
+int sum_multiple_of_three_or_five(void)
 {
 	int num, result;
 
@@ -19,5 +19,5 @@ int sum_multiple_of_three_or_five(void);
 			result = result + num;
 		}
 	}
-	printf('%d', result);
+	printf("%d", result);
 }
