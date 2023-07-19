@@ -5,7 +5,7 @@
  *
  * Return: void
  */
-void times_table(void)
+void print_times_table(int n)
 {
 	while (n >= 0 && n <= 15)
 	{
@@ -23,7 +23,7 @@ void times_table(void)
 						_putchar(',');
 						_putchar(' ');
 						_putchar(' ');
-						_puthcar(' ');
+						_putchar(' ');
 					}
 					_putchar(product + '0');
 				}
