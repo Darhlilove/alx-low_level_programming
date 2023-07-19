@@ -1,6 +1,17 @@
 #include <stdio.h>
 
 /**
+ * sum_multiple_of_three_or_five - multple sum function
+ *
+ * @n: placeolder of number
+ *
+ * Return: result always
+ */
+
+int sum_multiple_of_three_or_five(int n);
+
+
+/**
  * main - Entry point
  *
  * Return: Always 0.
@@ -23,6 +34,7 @@ int main(void)
  *
  * Return: The sum of multiples of 3 or 5 up to n.
  */
+
 int sum_multiple_of_three_or_five(int n)
 {
 	int num, result;
