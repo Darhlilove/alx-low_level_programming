@@ -26,15 +26,6 @@ int main(void)
 	return (0);
 }
 
-/**
- * sum_multiple_of_three_or_five - Calculates the sum of multiples of
- * 3 or 5 up to n.
- *
- * @n: The upper limit (exclusive) for finding multiples.
- *
- * Return: The sum of multiples of 3 or 5 up to n.
- */
-
 int sum_multiple_of_three_or_five(int n)
 {
 	int num, result;
