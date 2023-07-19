@@ -13,7 +13,7 @@ void print_alphabet_x10(void);
 /**
  * _islower: checks for lowercase character
  *
- * c: placeholder for the character to be checked
+ * @c: placeholder for the character to be checked
  */
 int _islower(int c);
 
@@ -40,5 +40,11 @@ int add(int, int);
 
 /* prints all natural numbers from n to 98, followed by a new line */
 void print_to_98(int n);
+
+/* prints the n times table, starting with 0 */
+void print_times_table(int n);
+
+/* computes and prints the sum of all the multiples of 3 or 5 below 1024 */
+int sum_multiple_of_three(int n);
 
 #endif
