@@ -2,17 +2,31 @@
 #include "main.h"
 
 /**
- * sum_multiple_of_three_or_five - Entry point
+ * main - Entry point
  *
- * Return: 0 always
+ * Return: Always 0.
  */
 
-int sum_multiple_of_three_or_five(void)
+int main(void)
+{
+	sum_multiple_of_three_or_five(1024);
+	return (0);
+}
+
+/**
+ * sum_multiple_of_three_or_five - Calculates the sum of multiples of
+ * 3 or 5 up to n.
+ *
+ * @n: The upper limit (exclusive) for finding multiples.
+ *
+ * Return: The sum of multiples of 3 or 5 up to n.
+ */
+int sum_multiple_of_three_or_five(int n)
 {
 	int num, result;
 
 	result = 0;
-	for (num = 1; num < 1024; num++)
+	for (num = 1; num < n; num++)
 	{
 		if (num % 3 == 0 || num % 5 == 0)
 		{
