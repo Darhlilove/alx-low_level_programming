@@ -44,10 +44,12 @@ void print_to_98(int n)
 		for (; n > 98; n--)
 		{
 			if (n > 99)
+			{
 				_putchar((n / 10) % 10 + '0');
-			_putchar(n % 10 + '0');
-			_putchar(',');
-			_putchar(' ');
+				_putchar(n % 10 + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
 			else
 			{
 				_putchar((n / 10) + '0');
