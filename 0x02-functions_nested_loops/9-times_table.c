@@ -18,20 +18,20 @@ void print_times_table(void)
 			{
 				if (j > 0)
 				{
-					putchar(',');
-					putchar(' ');
-					putchar(' ');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
 				}
-				putchar(product + '0');
+				_putchar(product + '0');
 			}
 			else
 			{
-				putchar(',');
-				putchar(' ');
-				putchar((product / 10) + '0');
-				putchar((product % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar((product / 10) + '0');
+				_putchar((product % 10) + '0');
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
