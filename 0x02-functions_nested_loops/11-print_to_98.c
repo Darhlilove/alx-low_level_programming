@@ -1,7 +1,19 @@
 #include "main.h"
 
 /**
- * print_to_98 - Prints all natural numbers from n to 98, followed by a new line.
+ * print_two_digits - Prints a two-digit number.
+ * @num: The number to be printed.
+ *
+ * Return: void
+ */
+void print_two_digits(int num)
+{
+	_putchar((num / 10) + '0');
+	_putchar((num % 10) + '0');
+}
+
+/**
+ * print_to_98 - Prints all natural numbers from n to 98.
  *
  * @n: The starting number.
  *
@@ -9,18 +21,39 @@
  */
 void print_to_98(int n)
 {
-	int i;
-
 	if (n <= 98)
 	{
-		for (i = n; i < 98; i++)
-			printf("%d, ", i);
+		for (; n < 98; n++)
+		{
+			if (n >= 0)
+				_putchar(n + '0');
+			else
+			{
+				_putchar('-');
+				print_two_digits(-n);
+			}
+			_putchar(',');
+			_putchar(' ');
+		}
 	}
 	else
 	{
-		for (i = n; i > 98; i--)
-			printf("%d, ", i);
+		for (; n > 98; n--)
+		{
+			if (n > 99)
+				_putchar((i / 10) % 10 + '0');
+			_putchar(i % 10 + '0');
+			_putchar(',');
+			_putchar(' ');
+			else
+			{
+				_putchar((n / 10) + '0');
+				_putchar((n % 10) + '0');
+			}
+			_putchar(',');
+			_putchar(' ');
+		}
 	}
-
-	printf("98\n");
+	print_two_digits(98);
+	_putchar('\n');
 }
