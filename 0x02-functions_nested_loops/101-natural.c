@@ -20,4 +20,6 @@ int sum_multiple_of_three_or_five(void)
 		}
 	}
 	printf("%d", result);
+
+	return (0);
 }
