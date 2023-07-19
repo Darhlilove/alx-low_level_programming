@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * sum_multiple_of_three_or_five(int n) - Entry point
+ * sum_multiple_of_three_or_five - Entry point
  *
  * Return: 0 always
  */
