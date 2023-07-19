@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_to_98 - Prints all natural numbers from n to 98, followed by a new line.
+ * print_to_98 - Prints all natural numbers from n to 98
  *
  * @n: The starting number.
  *
@@ -15,9 +15,19 @@ void print_to_98(int n)
 	{
 		for (i = n; i < 98; i++)
 		{
-			_putchar((i / 100) + '0');
-			_putchar(((i / 10) % 10) + '0');
-			_putchar((i % 10) + '0');
+			if (i < 10 && i >= 0)
+				_putchar(i + '0');
+			else if (i < 0)
+			{
+				_putchar('-');
+				_putchar((-i) / 10 + '0');
+				_putchar((-i) % 10 + '0');
+			}
+			else
+			{
+				_putchar(i / 10 + '0');
+				_putchar(i % 10 + '0');
+			}
 			_putchar(',');
 			_putchar(' ');
 		}
@@ -26,14 +36,13 @@ void print_to_98(int n)
 	{
 		for (i = n; i > 98; i--)
 		{
-			_putchar((i / 100) + '0');
-			_putchar(((i / 10) % 10) + '0');
-			_putchar((i % 10) + '0');
+			_putchar(i / 100 + '0');
+			_putchar((i / 10) % 10 + '0');
+			_putchar(i % 10 + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
 	}
-
 	_putchar('9');
 	_putchar('8');
 	_putchar('\n');
