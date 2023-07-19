@@ -22,7 +22,7 @@ int main(void)
 	int result;
 
 	result = sum_multiple_of_three_or_five(1024);
-	printf("%d", result);
+	printf("%d\n", result);
 	return (0);
 }
 
