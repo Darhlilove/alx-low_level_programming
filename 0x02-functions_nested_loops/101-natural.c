@@ -8,7 +8,10 @@
 
 int main(void)
 {
-	sum_multiple_of_three_or_five(1024);
+	int result;
+
+	result = sum_multiple_of_three_or_five(1024);
+	printf("%d", result);
 	return (0);
 }
 
@@ -32,7 +35,6 @@ int sum_multiple_of_three_or_five(int n)
 			result = result + num;
 		}
 	}
-	printf("%d", result);
 
-	return (0);
+	return (result);
 }
