@@ -32,7 +32,7 @@ int main(void)
 
 void fibonacci(int n)
 {
-	int num1, num2, result, count, cond;
+	long long int num1, num2, result, count, cond;
 
 	num1 = 1;
 	num2 = 2;
@@ -47,11 +47,11 @@ void fibonacci(int n)
 
 		if (count != cond)
 		{
-			printf("%d, ", result);
+			printf("%lld, ", result);
 		}
 		else
 		{
-			printf("%d\n", result);
+			printf("%lld\n", result);
 		}
 
 		num1 = num2;
