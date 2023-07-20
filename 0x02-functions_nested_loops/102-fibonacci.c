@@ -32,13 +32,13 @@ int main(void)
 
 void fibonacci(int n)
 {
-	int num1, num2, result, count, cond;
+	long int num1, num2, result, count, cond;
 
 	num1 = 1;
 	num2 = 2;
 
-	printf("%d, ", num1);
-	printf("%d, ", num2);
+	printf("%ld, ", num1);
+	printf("%ld, ", num2);
 
 	cond = n - 2; /* counter for n-2 observations */
 	for (count = 1; count <= cond; count++)
@@ -47,11 +47,11 @@ void fibonacci(int n)
 
 		if (count != cond)
 		{
-			printf("%lld, ", result);
+			printf("%ld, ", result);
 		}
 		else
 		{
-			printf("%lld\n", result);
+			printf("%ld\n", result);
 		}
 
 		num1 = num2;
