@@ -37,8 +37,8 @@ void fibonacci(int n)
 	num1 = 1;
 	num2 = 2;
 
-	printf("%d, ", num1);
-	printf("%d, ", num2);
+	printf("%lld, ", num1);
+	printf("%lld, ", num2);
 
 	cond = n - 2; /* counter for n-2 observations */
 	for (count = 1; count <= cond; count++)
