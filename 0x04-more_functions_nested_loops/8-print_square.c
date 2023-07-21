@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_square - draws a diagonal line on the terminal.
+ * print_square - draws a square on the terminal.
  *
  * @size: size of square
  *
@@ -10,7 +10,7 @@
 
 void print_square(int size)
 {
-	int i, k, num;
+	int i, k;
 
 	if (size > 0)
 	{
