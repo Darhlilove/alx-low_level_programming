@@ -35,6 +35,12 @@ void fizz_buzz(void)
 	}
 }
 
+/**
+ * main - Entry point
+ *
+ * Return: 0 Always
+ */
+
 int main(void)
 {
 	fizz_buzz();
