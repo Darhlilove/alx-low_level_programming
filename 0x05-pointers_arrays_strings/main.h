@@ -1,6 +1,9 @@
 #ifndef HEADER_H
 #define HEADER_H
 
+/* prints character to stdout */
+int _putchar(char c);
+
 /** takes a pointer to an int as parameter and updates the value it points to
  * to 98
  */
