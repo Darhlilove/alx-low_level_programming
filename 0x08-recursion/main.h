@@ -1,6 +1,9 @@
 #ifndef HEADER_H
 #define HEADER_H
 
+/* prints character to stdout */
+int _putchar(char c);
+
 /* prints a string */
 void _puts_recursion(char *s);
 
@@ -22,4 +25,4 @@ int _sqrt_recursion(int n);
 /* returns 1 if the input integer is a prime number, otherwise return 0 */
 int is_prime_number(int n);
 
-#endif HEADER_H
+#endif
