@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _pow_recursion(int x, int y) - returns the value of x raised
+ * _pow_recursion - returns the value of x raised
  * to the power y
  *
  * @x: placeholder for base
@@ -22,11 +22,8 @@ int _pow_recursion(int x, int y)
 		return (1);
 	}
 
-	y--;
-
 	if (y > 0)
 	{
-		return(x * _pow_recursion(x, y));
+		return(x * _pow_recursion(x, y - 1));
 	}
-
 }
