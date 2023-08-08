@@ -21,7 +21,9 @@ int main(int argc, char *argv[])
 	{
 		int num1 = atoi(argv[1]); /* Convert string to integer */
 		int num2 = atoi(argv[2]); /* Convert string to integer */
+
 		printf("%d\n", num1 * num2);
+
 		return (0);
 	}
 }
