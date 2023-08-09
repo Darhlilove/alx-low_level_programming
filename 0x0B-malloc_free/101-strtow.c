@@ -52,7 +52,8 @@ int count_words(char *str)
 
 char *get_next_word(char **str)
 {
-	char *start;
+	char *start, *word;
+	int i;
 
 	while (**str && is_space(**str))
 		(*str)++;
@@ -64,7 +65,21 @@ char *get_next_word(char **str)
 	if (*str == start)
 		return (NULL);
 
-	return (start);
+	word = malloc((*str - start + 1) * sizeof(char));
+
+	if (!word)
+		return (NULL);
+
+	i = 0;
+	while (start < *str)
+	{
+		word[i] = *start;
+		i++;
+		start++;
+	}
+	word[i] = '\0';
+
+	return (word);
 }
 
 /**
