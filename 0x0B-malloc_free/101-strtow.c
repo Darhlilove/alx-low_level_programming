@@ -86,12 +86,12 @@ char **strtow(char *str)
 	if (word_count == 0)
 		return (NULL);
 
-	*words = malloc((word_count + 1) * sizeof(char *));
+	words = malloc((word_count + 1) * sizeof(char *));
 
 	if (!words)
 		return (NULL);
 
-	*word_ptr = words;
+	word_ptr = words;
 	while (*str)
 	{
 		char *word = get_next_word(&str);
@@ -103,7 +103,7 @@ char **strtow(char *str)
 		}
 	}
 
-	*word_ptr = NULL;
+	word_ptr = NULL;
 
 	return (words);
 }
